@@ -7,8 +7,8 @@
     tools:context=".MainActivity">
 
     <TableLayout
-        android:layout_width="378dp"
-        android:layout_height="454dp"
+        android:layout_width="373dp"
+        android:layout_height="538dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,8 +38,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Hello Mr. Eyana, Today is"
-                    android:textSize="25sp" />
+                    android:text="Create A Holiday"
+                    android:textSize="17sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -57,13 +57,7 @@
             <LinearLayout
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
-                android:layout_weight="0"
-                android:orientation="horizontal" />
-
-            <LinearLayout
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="15"
+                android:layout_weight="2"
                 android:orientation="horizontal">
 
                 <TextView
@@ -72,50 +66,30 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="@string/cal_month"
-                    android:textSize="35sp" />
+                    android:text="Holiday Name:"
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
-                android:layout_weight="0"
-                android:orientation="horizontal" />
+                android:layout_weight="3"
+                android:focusable="true"
 
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0">
-
-            <LinearLayout
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="0"
-                android:orientation="horizontal" />
-
-            <LinearLayout
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="15"
+                android:focusableInTouchMode="true"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="@string/cal_day"
-                    android:textSize="70sp" />
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=" " />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="0"
-                android:orientation="horizontal" />
 
         </TableRow>
 
@@ -127,48 +101,7 @@
             <LinearLayout
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
-                android:layout_weight="0"
-                android:orientation="horizontal" />
-
-            <LinearLayout
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="15"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="@string/cal_dayofweek"
-                    android:textSize="20sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="0"
-                android:orientation="horizontal" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0">
-
-            <LinearLayout
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="0"
-                android:orientation="horizontal" />
-
-            <LinearLayout
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="15"
+                android:layout_weight="2"
                 android:orientation="horizontal">
 
                 <TextView
@@ -177,8 +110,36 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="@string/str_hol"
-                    android:textSize="20sp" />
+                    android:text="Holiday Type:"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="National" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regional/Local" />
+
+                </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
@@ -197,8 +158,63 @@
             <LinearLayout
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Holiday Desc::"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="15"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
                 android:layout_weight="0"
                 android:orientation="horizontal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
 
             <LinearLayout
                 android:layout_width="0dip"
@@ -207,11 +223,11 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/add_btn"
+                    android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Add a Holiday" />
+                    android:text="Confirm" />
             </LinearLayout>
 
             <LinearLayout

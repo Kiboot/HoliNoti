@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">HoliNoti</string>
+    <string name="app_name">Holiday Notifier</string>
+    <string name="cal_month">May</string>
+    <string name="cal_day">29</string>
+    <string name="cal_dayofweek">Wednesday</string>
+    <string name="str_hol">There are no National or Regional Holidays today. There will be classes today in your school.</string>
 </resources>
